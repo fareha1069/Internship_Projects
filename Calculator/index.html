@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clculator</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div class="container">
+
+      <div id="topRow" class="row">
+        <input type="text" id="result">
+        
+        <button id="clear2" onclick="handleBackspace()">x</button>
+        <button id="clear1" onclick="clrScreen()">C</button>
+      </div>
+     
+     <div class="row">
+      <button onclick="showValue(this.innerHTML)" >1</button>
+      <button onclick="showValue(this.innerHTML)">2</button>
+      <button onclick="showValue(this.innerHTML)">3</button>
+      <button onclick="showValue(this.innerHTML)">/</button>
+     </div>
+
+     <div class="row">
+      <button onclick="showValue(this.innerHTML)">4</button>
+      <button onclick="showValue(this.innerHTML)">5</button>
+      <button onclick="showValue(this.innerHTML)">6</button>
+      <button onclick="showValue(this.innerHTML)">*</button>
+     </div>
+
+     <div class="row">
+      <button onclick="showValue(this.innerHTML)">7</button>
+      <button onclick="showValue(this.innerHTML)">8</button>
+      <button onclick="showValue(this.innerHTML)">9</button>
+      <button onclick="showValue(this.innerHTML)">-</button>
+     </div>
+
+     <div id="bottomRow" class="row">
+      <button onclick="showValue(this.innerHTML)">0</button>
+      <button onclick="showValue(this.innerHTML)">.</button>
+      <button onclick="showValue(this.innerHTML)">=</button>
+      <button onclick="showValue(this.innerHTML)">+</button>
+     </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
