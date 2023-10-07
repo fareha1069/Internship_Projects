@@ -197,8 +197,8 @@ input{
   }
   .row{
     display: flex;
-    width: 44%;
-    height: 21%;
+    width: 40%;
+    height: 23%;
     margin-left: auto;
     margin-right: auto;
     display: flex;
@@ -207,7 +207,7 @@ input{
     border-right: 1px solid black;
 }
 .container .row button{
-  height: 52%;
+  height: 55%;
   width: 13%;
   margin: 20px;
   padding: 15px;
