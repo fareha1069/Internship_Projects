@@ -35,14 +35,13 @@ h3{
 .row{
   display: flex;
   width: 55%;
-  height: 20%;
+  height: 25%;
   margin-left: auto;
   margin-right: auto;
   display: flex;
-  background-color:#41638fcb;
+  background-color:#41638f;
   border-left: 1px solid black;
   border-right: 1px solid black;
-/*   margin-top:10px; */
 }
 
 .container .row button{
@@ -65,8 +64,9 @@ border-radius: 20px;
 #result{
   /* margin: 8px; */
   padding: 10px;
-  font-size: 16px;
+  font-size: 12px;
   font-weight: bold;
+  
 }
 
 .container .row button:hover{
@@ -127,6 +127,13 @@ input{
   /* border: none;  */
   border-radius: 20px;
 }
+#result{
+  /* margin: 8px; */
+  padding: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  
+}
 }
 
 /* tablet */
@@ -168,6 +175,13 @@ input{
   /* border: none;  */
   border-radius: 20px;
 }
+#result{
+  /* margin: 8px; */
+  padding: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  
+}
 }
 /* desktop */
 @media (min-width:992px) {
@@ -208,5 +222,12 @@ input{
   font-weight: bold;
   /* border: none;  */
   border-radius: 20px;
+}
+#result{
+  /* margin: 8px; */
+  padding: 10px;
+  font-size: 24px;
+  font-weight: bold;
+  
 }
 }
