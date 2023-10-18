@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap demo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .container {
+      background-color: bisque;
+      /* color: antiquewhite; */
+    }
+
+    .top h1 {
+      font-weight: bolder;
+      text-shadow: 3px 3px 3px #333;
+      /* border: 1px solid black; */
+    }
+
+    .top h1,
+    .about h2,
+    .menu,
+    .specials h2 {
+      color: #741a2e;
+      font-style: italic;
+      text-shadow: 3px 3px 3px #333;
+    }
+
+    .order h2 , .order h1{
+        margin-top: 70px;
+        margin-bottom: 40px;
+        text-align: center;
+        color: #741a2e;
+        font-style: italic;
+        text-shadow: 1px 1px 1px #333;
+
+    }
+
+    .specials p,
+    .top p,
+    .about p , .order p {
+      color: #741a2e;
+      font-style: italic;
+      font-weight: normal;
+    }
+
+    .order p
+    {
+        margin-left: 90px;
+        margin-right: 80px;
+        padding: 1%;
+    }
+    
+    .navbar {
+      text-align: center;
+    }
+
+    .navbar a {
+      font-weight: bolder;
+    }
+
+
+    .top button,
+    .col button,
+    button:active ,.specials button{
+      background-color: #741a2e;
+      color: aliceblue;
+    }
+
+    .specials .head1,
+    .menu .head1 {
+      margin: 60px;
+      text-align: center;
+    }
+
+    .specials img {
+      width: 200px;
+      height: 200px;
+    }
+
+   
+
+    .footer {
+      padding: 5px;
+      margin-top: 100px;
+      background-color: #333;
+      height: 200px;
+      color: white;
+      text-align: left;
+      /* width: 100vw; */
+    }
+
+    .footer .contact-info {
+      float: right;
+      margin: 20px;
+      font-style: italic;
+    }
+
+    .footer .links {
+      margin: 20px;
+      font-style: italic;
+    }
+
+    .footer .links img {
+      width: 50px;
+      height: 50px;
+      padding: 8px;
+    }
+
+    .copyright p {
+      margin: 10px;
+    }
+
+      .footer {
+        margin-bottom: 150px;
+      }
+
+      .footer .contact-info {
+        display: none;
+      }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+
+    <div class="home">
+      <!-- navigation -->
+      <nav class="navbar navbar-expand-lg bg-body-tertiary" class="navbar bg-dark border-bottom border-body"
+        data-bs-theme="dark">
+
+        <div class="container-fluid">
+          <a class="nav-link active navbar-brand" aria-current="page" href="index.html">Home</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#menus">Menu</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#about">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#special">Specials</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#contact">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </nav>
+      <!-- main interface   -->
+     
+    </div>
+
+    
+
+   <div class="order">
+    <!-- <h1></h1> -->
+    <h2>Your Order Have Been Placed!</h2>
+    <p>Your trust in us warms our hearts as much as a freshly brewed cup of coffee. We're dedicated to 
+        providing you with the finest coffee experience, 
+        and your order is a testament to that commitment. 
+    </p>
+    <p>
+        If there's ever anything more we can do to enhance your coffee journey, please don't hesitate to let us know. 
+    </p>
+
+    <p>Thank you for making us a part of your day, and we hope your coffee order brings you the comfort and energy you deserve.</p>
+
+    <h2>Thanks For Visiting Us!</h2>
+   </div>
+
+   
+    <!-- <button id="placeOrder">hello</button> -->
+    <footer>
+      <div id="contact" class="footer">
+
+        <div class="contact-info">
+          <h2>Contact Us</h2>
+          <p>Phone: (123) 456-7890</p>
+          <p>Address: 123 Main Street, Coffeeville, CA 98765</p>
+        </div>
+
+        <div class="links">
+          <h2>Follow Us</h2>
+          <table id="table1">
+            <tr>
+              <td><a href="https://github.com/fareha1069/"><img
+                    src="https://w7.pngwing.com/pngs/752/373/png-transparent-computer-icons-facebook-logo-facebook-logo-fine-art-thumbnail.png"
+                    alt="github"></a></td>
+
+              <td><a href="https://www.linkedin.com/in/fareha-ilyas-87011325b/"><img
+                    src="https://w7.pngwing.com/pngs/541/840/png-transparent-logo-computer-icons-black-and-white-twitter-header-miscellaneous-monochrome-computer-wallpaper-thumbnail.png"
+                    alt="linked in"></a></td>
+
+              <td><a href="mailto:farehailyas6@gmail.com"><img
+                    src="https://w7.pngwing.com/pngs/1011/641/png-transparent-message-logo-yahoo-mail-email-address-webmail-email-icon-miscellaneous-angle-triangle-thumbnail.png"
+                    alt="mail"></a></td>
+            </tr>
+          </table>
+        </div>
+
+        <div class="copyright">
+          <p>&copy; 2023 Beans Bliss Cafe'. All rights reserved.</p>
+        </div>
+
+
+    </footer>
+
+  </div>
+
+
+</body>
+
+</html>
