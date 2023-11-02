@@ -1,230 +1,216 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Bootstrap demo</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    .container {
-      background-color: bisque;
-      /* color: antiquewhite; */
-    }
-
-    .top h1 {
-      font-weight: bolder;
-      text-shadow: 3px 3px 3px #333;
-      /* border: 1px solid black; */
-    }
-
-    .top h1,
-    .about h2,
-    .menu,
-    .specials h2 {
-      color: #741a2e;
-      font-style: italic;
-      text-shadow: 3px 3px 3px #333;
-    }
-
-    .order h2 , .order h1{
-        margin-top: 70px;
-        margin-bottom: 40px;
-        text-align: center;
-        color: #741a2e;
-        font-style: italic;
-        text-shadow: 1px 1px 1px #333;
-
-    }
-
-    .specials p,
-    .top p,
-    .about p , .order p {
-      color: #741a2e;
-      font-style: italic;
-      font-weight: normal;
-    }
-
-    .order p
-    {
-        margin-left: 90px;
-        margin-right: 80px;
-        padding: 1%;
-    }
-    
-    .navbar {
-      text-align: center;
-    }
-
-    .navbar a {
-      font-weight: bolder;
-    }
-
-
-    .top button,
-    .col button,
-    button:active ,.specials button{
-      background-color: #741a2e;
-      color: aliceblue;
-    }
-
-    .specials .head1,
-    .menu .head1 {
-      margin: 60px;
-      text-align: center;
-    }
-
-    .specials img {
-      width: 200px;
-      height: 200px;
-    }
-
-   
-
-    .footer {
-      padding: 5px;
-      margin-top: 100px;
-      background-color: #333;
-      height: 200px;
-      color: white;
-      text-align: left;
-      /* width: 100vw; */
-    }
-
-    .footer .contact-info {
-      float: right;
-      margin: 20px;
-      font-style: italic;
-    }
-
-    .footer .links {
-      margin: 20px;
-      font-style: italic;
-    }
-
-    .footer .links img {
-      width: 50px;
-      height: 50px;
-      padding: 8px;
-    }
-
-    .copyright p {
-      margin: 10px;
-    }
-
-      .footer {
-        margin-bottom: 150px;
-      }
-
-      .footer .contact-info {
-        display: none;
-      }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Josefin+Sans:wght@300&family=Oxygen:wght@300&family=Poppins:ital,wght@1,200&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
 </head>
-
+    <style>
+      .proficiency img{
+        padding: 6px;
+        width: 50px;
+        height: 50px;
+        margin-top: 10px;
+        margin-bottom: 0;
+      }
+      .proficiency p{
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', Verdana, sans-serif;
+        font-style: italic;
+      }
+    </style>
 <body>
-  <div class="container">
 
-    <div class="home">
-      <!-- navigation -->
-      <nav class="navbar navbar-expand-lg bg-body-tertiary" class="navbar bg-dark border-bottom border-body"
-        data-bs-theme="dark">
+    <div class="container">
 
-        <div class="container-fluid">
-          <a class="nav-link active navbar-brand" aria-current="page" href="index.html">Home</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-            aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#menus">Menu</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#about">About Us</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#special">Specials</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#contact">Contact Us</a>
-              </li>
-            </ul>
-          </div>
+        <!-- navigation bar -->
+        <div class="topnav">
+            <a href=""><img src="https://techcult.com/wp-content/uploads/2023/05/Does-MeetMe-track-your-location.jpg"
+                    alt=""> </a>
+            <div class="bar" id="myLinks">
+                <a href="#myskill">Skills</a>
+                <a href="#myProficiency">Proficiency</a>
+                <a href="">Projects</a>
+                <a href="#myAchieve">Achievments</a>
+                <a href="#mycontact">Contact Me</a>
+            </div>
         </div>
 
-      </nav>
-      <!-- main interface   -->
-     
+        <!-- About section -->
+        <div class="bodyPlusimage">
+            <div class="body">
+                <h1>Hi! All I am Fareha</h1>
+                <div class="about">
+
+                    <p>A passionate and driven individual who embraces both the challenges of competitive programming
+                        and the
+                        artistic canvas of front-end development. My journey as a problem solver and a budding front-end
+                        developer underscores my commitment to continuous learning and growth.</p>
+                </div>
+
+            </div>
+
+            <div class="image">
+                <img src="me.jpeg" alt="">
+            </div>
+        </div>
+
+        <!-- Contact -->
+        <div class="contacts">
+            <table id="table1">
+                <tr>
+                    <td><a href="https://github.com/fareha1069/"><img src="git.png" alt="github"></a></td>
+
+                    <td><a href="https://www.linkedin.com/in/fareha-ilyas-87011325b/"><img src="linkedin.png" alt="linked in"></a></td>
+
+                    <td><a href="https://www.hackerrank.com/farehailyas61"><img src="hackerrank.png" alt="hackerrank"></a></td>
+
+                    <td><a href="https://codeforces.com/profile/_fareha"><img src="codeforces.png" alt="codeforces"></a></td>
+
+                   <td><a href="mailto:farehailyas6@gmail.com"><img src="gmail.png" alt="mail"></a></td>
+                </tr>
+            </table>
+
+        </div>
+
+        <!-- skill section -->
+        <div class="skills" id="myskill">
+            <div class="image">
+                <img src="we.jpeg" alt="">
+            </div>
+
+            <div class="body">
+                <h1>What I Do</h1>
+                <div id="cp">
+                    <p>
+                        I'm an avid competitive programmer with a passion for delving into diverse tech domains, always
+                        eager to expand my horizons.
+                    </p>
+
+                    <table id="table2">
+                        <tr>
+                            <td><img src="c.png"alt="c"></td>
+                            <td><img src="c2.png"alt="c++"></td>
+                            <td><img id="html" src="HTML.png" alt="html"></td>
+                            <td><img id="css" src="CSS.png" alt="css"></td>
+                            <td><img id="js"src="js.png"alt="js"></td>
+                        </tr>
+                    </table>
+                    <p>
+                        I am a proficient problem solver with a strong command of Data Structures and Algorithms (DSA),
+                        coupled with expertise in the C and C++ programming languages.
+                    </p>
+                    <p>
+                        Also a beginner in front-end web development and have good command over HTML,CSS and Java
+                        Script.
+                    </p>
+                    </p>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+        <!-- proficieny bar -->
+        <div class="proficiency" id="myProficiency">
+            <h1>Proficiecy</h1>
+           
+            <p >C language</p>
+            <!-- <img src="c.png" alt=""> -->
+            <div id="skill-C">90%</div>
+            <p>c++ language</p>
+            <div id="skill-C2">85%</div>
+            <p>HTML</p>
+            <div id="skill-html">75%</div>
+            <p>CSS</p>
+            <div id="skill-css">70%</div>
+            <p>Java Script</p>
+            <div id="skill-js">40%</div>
+          
+        </div>
+
+        <!-- Achievments -->
+       <div class="achieve" id="myAchieve">
+        <h1>Achievments</h1>
+        <div class="achivement">
+
+            <div class="appfest">
+                <img src="appFest.jpg" alt="">
+                <p>
+                    Secured the first runner-up position in CODEBEES during APP FEST organized by FCIT, 
+                    demonstrating my competitive programming prowess.
+                    <!-- <iframe src="app fest.pdf" frameborder="0"></iframe> -->
+                </p>
+                <a href="app fest.pdf">Certificate</a>   
+            </div>
+
+            <div class="pucon">
+                <img src="pucon.jpg" alt="">
+                <p>
+                    Recognized as part of the top female team at PUCON by FCIT, highlighting our collective excellence 
+                    and achievements in the field
+                </p>
+                <a href="app fest.pdf">Certificate</a>   
+            </div>
+           
+
+        </div>
+
+       </div>
+
+        <!-- contact again -->
+        <div class="footer">
+            <h1>Reach Out to me!</h1>
+            <span class="material-symbols-outlined">
+                location_on <span>Lahore ,Pakistan</span>
+            </span>
+
+            <div id="mycontact">
+                <table id="table1">
+                    <tr>
+                        <td><a href="https://github.com/fareha1069/"><img src="git.png" alt="github"></a></td>
+    
+                        <td><a href="https://www.linkedin.com/in/fareha-ilyas-87011325b/"><img src="linkedin.png" alt="linked in"></a></td>
+    
+                        <td><a href="https://www.hackerrank.com/farehailyas61"><img src="hackerrank.png" alt="hackerrank"></a></td>
+    
+                        <td><a href="https://codeforces.com/profile/_fareha"><img src="codeforces.png" alt="codeforces"></a></td>
+    
+                       <td><a href="mailto:farehailyas6@gmail.com"><img src="gmail.png" alt="mail"></a></td>
+                    </tr>
+                </table>
+
+            </div>
+        </div>
+
+        <!-- footer copyright -->
+        <footer class="copyright">
+            <p>&copy; <span id="year"></span> Fareha Ilyas. All Rights Reserved.</p>
+            <p>All content and materials on this website are the intellectual property of Fareha Ilyas and may not be
+                reproduced, copied, or distributed without permission.</p>
+            <p>For inquiries or permissions, please contact <a
+                    href="mailto:farehailyas6@example.com">farehailyas6@example.com</a>.</p>
+        </footer>
+
+
+        
     </div>
 
-    
-
-   <div class="order">
-    <!-- <h1></h1> -->
-    <h2>Your Order Have Been Placed!</h2>
-    <p>Your trust in us warms our hearts as much as a freshly brewed cup of coffee. We're dedicated to 
-        providing you with the finest coffee experience, 
-        and your order is a testament to that commitment. 
-    </p>
-    <p>
-        If there's ever anything more we can do to enhance your coffee journey, please don't hesitate to let us know. 
-    </p>
-
-    <p>Thank you for making us a part of your day, and we hope your coffee order brings you the comfort and energy you deserve.</p>
-
-    <h2>Thanks For Visiting Us!</h2>
-   </div>
-
-   
-    <!-- <button id="placeOrder">hello</button> -->
-    <footer>
-      <div id="contact" class="footer">
-
-        <div class="contact-info">
-          <h2>Contact Us</h2>
-          <p>Phone: (123) 456-7890</p>
-          <p>Address: 123 Main Street, Coffeeville, CA 98765</p>
-        </div>
-
-        <div class="links">
-          <h2>Follow Us</h2>
-          <table id="table1">
-            <tr>
-              <td><a href="https://github.com/fareha1069/"><img
-                    src="https://w7.pngwing.com/pngs/752/373/png-transparent-computer-icons-facebook-logo-facebook-logo-fine-art-thumbnail.png"
-                    alt="github"></a></td>
-
-              <td><a href="https://www.linkedin.com/in/fareha-ilyas-87011325b/"><img
-                    src="https://w7.pngwing.com/pngs/541/840/png-transparent-logo-computer-icons-black-and-white-twitter-header-miscellaneous-monochrome-computer-wallpaper-thumbnail.png"
-                    alt="linked in"></a></td>
-
-              <td><a href="mailto:farehailyas6@gmail.com"><img
-                    src="https://w7.pngwing.com/pngs/1011/641/png-transparent-message-logo-yahoo-mail-email-address-webmail-email-icon-miscellaneous-angle-triangle-thumbnail.png"
-                    alt="mail"></a></td>
-            </tr>
-          </table>
-        </div>
-
-        <div class="copyright">
-          <p>&copy; 2023 Beans Bliss Cafe'. All rights reserved.</p>
-        </div>
-
-
-    </footer>
-
-  </div>
-
-
+    <script>
+        // JavaScript to dynamically set the copyright year
+        let year;
+        year = document.getElementById('year');
+        year.innerHTML = new Date().getFullYear();
+    </script>
 </body>
 
 </html>
