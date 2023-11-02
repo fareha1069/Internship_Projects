@@ -12,37 +12,47 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+      
 </head>
-    <style>
-      .proficiency img{
-        padding: 6px;
-        width: 50px;
-        height: 50px;
-        margin-top: 10px;
-        margin-bottom: 0;
-      }
-      .proficiency p{
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', Verdana, sans-serif;
-        font-style: italic;
-      }
-    </style>
+
 <body>
-
+    
     <div class="container">
-
         <!-- navigation bar -->
-        <div class="topnav">
-            <a href=""><img src="https://techcult.com/wp-content/uploads/2023/05/Does-MeetMe-track-your-location.jpg"
-                    alt=""> </a>
-            <div class="bar" id="myLinks">
-                <a href="#myskill">Skills</a>
-                <a href="#myProficiency">Proficiency</a>
-                <a href="">Projects</a>
-                <a href="#myAchieve">Achievments</a>
-                <a href="#mycontact">Contact Me</a>
-            </div>
-        </div>
-
+        <nav class="navbar" id="navBar">
+            <!-- <a href="#" class=""></a> -->
+            <button class="dropdownTrigger">
+              <a href="javascript:void(0);" class="icon">&#9776;</a>
+            </button>
+            <ul class="navbarList" id="Navi">
+              <li class="navitems"><a class="Skills" href="#myskill">Skills</a></li>
+              <li class="navitems">
+                <li class="navitems"><a class="Proficiency" href="#myProficiency">Proficiency</a></li>
+              <li class="navitems">
+                <a class="Projects" href="#Projects">Projects</a>
+              </li>
+              <li class="navitems">
+                <a href="#myAchieve" class="Achievements">Achievements</a>
+              </li>
+              <li class="navitems"><a class="Me" href="#myContact">Reach Out to Me</a></li>
+            </ul>
+          </nav>
+          <div class="menu">
+            <ul class="menu">
+                <li class="navitems"><a class="Skills" href="#myskill">Skills</a></li>
+                <li class="navitems">
+                  <li class="navitems"><a class="Proficiency" href="#myProficiency">Proficiency</a></li>
+                <li class="navitems">
+                  <a class="Projects" href="#Projects">Projects</a>
+                </li>
+                <li class="navitems">
+                  <a href="#myAchieve" class="Achievements">Achievements</a>
+                </li>
+                <li class="navitems"><a class="Me" href="#myContact">Reach Out to Me</a></li>
+            </ul>
+          </div>
+   
         <!-- About section -->
         <div class="bodyPlusimage">
             <div class="body">
@@ -51,8 +61,7 @@
 
                     <p>A passionate and driven individual who embraces both the challenges of competitive programming
                         and the
-                        artistic canvas of front-end development. My journey as a problem solver and a budding front-end
-                        developer underscores my commitment to continuous learning and growth.</p>
+                        artistic canvas of front-end development.</p>
                 </div>
 
             </div>
@@ -83,15 +92,14 @@
         <!-- skill section -->
         <div class="skills" id="myskill">
             <div class="image">
-                <img src="we.jpeg" alt="">
+                <img src="https://img.freepik.com/premium-photo/document-management-system-people-hand-using-laptop-computer-with-virtual-graphic-icon-desk-home-office-digital-marketing-work-from-home-business-finance-internet-network-technology-concept_33829-673.jpg" alt="">
             </div>
 
             <div class="body">
                 <h1>What I Do</h1>
                 <div id="cp">
                     <p>
-                        I'm an avid competitive programmer with a passion for delving into diverse tech domains, always
-                        eager to expand my horizons.
+                        I'm an avid competitive programmer with a passion for delving into diverse tech.
                     </p>
 
                     <table id="table2">
@@ -104,8 +112,7 @@
                         </tr>
                     </table>
                     <p>
-                        I am a proficient problem solver with a strong command of Data Structures and Algorithms (DSA),
-                        coupled with expertise in the C and C++ programming languages.
+                        I am a proficient problem solver, coupled with expertise in the C and C++ programming languages.
                     </p>
                     <p>
                         Also a beginner in front-end web development and have good command over HTML,CSS and Java
@@ -138,40 +145,104 @@
           
         </div>
 
+        <!-- Projects -->
+        <div class="project" id="myProject">
+            <h1>Projects</h1>
+           <div class="development">
+            <div class="calculator">
+                
+                <div class="p1">
+                    <h3>Arithemetic Calculator</h3>
+                    <p>User can perform addition, subtraction, multiplication, and division. 
+                        The calculator features an intuitive interface, highlighting my JavaScript proficiency in implementing 
+                        its core functionality. It serves as a practical utility for individuals seeking rapid
+                         arithmetic calculations, underscoring my problem-solving abilities and foundational web development expertise.</p>
+                    <p class="source1">
+                        Live Demo: 
+                        <a  href="https://fareha1069.github.io/Internship_Projects/Calculator/">Calculator</a>
+                        <!-- <button><a href="https://fareha1069.github.io/Internship_Projects/Calculator/"></a>Calculator</button> -->
+                    </p>
+                    <p class="source">
+                        Source Code : <a href="https://github.com/fareha1069/Internship_Projects/tree/main/Calculator">Click Here</a>
+                    </p>
+                </div>
+               
+               </div>
+               <div class="coffee">
+                <div class="p2">
+                    <h3>Landing Page </h3>
+                <p>It's a Coffee Bar Landing Page ,a testament to my skills in web design and user experience.It 
+                    effectively engages users with enticing visuals of artisan coffee blends 
+                    menu , specials menu and allows the user to place order that is easy to navigate. 
+                    As a front-end developer, I leveraged my expertise in HTML, 
+                    CSS, and JavaScript to craft a responsive and visually appealing landing page. </p>
+                    <p class="source1" >
+                        Live Demo: 
+                        <a class="btn" href="https://fareha1069.github.io/Internship_Projects/Landing_Page/" class="link-button">Landing Page</a>
+                    </p>
+                    <p class="source">
+                        Source Code:<a href="https://github.com/fareha1069/Internship_Projects/tree/main/Landing_Page">Click Here</a>
+                    </p>
+                </div>
+               </div>
+               <div class="games">
+                <div class="p3">
+                    <h3>Game Development</h3>
+                    
+                    <p>Tic-Tac-Toe game developed in C and Rock-Paper-Scissors game coded in C++ demonstrate my ability to create classic, yet timeless, 
+                        games that are enjoyed by players of all ages. These project showcases my skills in programming logic, 
+                        user input handling, and algorithm design to create a dynamic, enjoyable and functional and challenging gaming experience.</p>
+                        <p>
+                    <p class="source">
+                        Tic Tac Toe:<a href="https://github.com/fareha1069/Games/blob/main/Tic-Tac-toe.c">Click Here</a>
+                    </p>
+                    <p class="source">
+                        Rock Paper Sccissors:<a href="https://github.com/fareha1069/Games/blob/main/Rock-Paper-scissors.cpp">Click Here</a>
+                    </p>
+                </div>
+               </div>
+           </div>
+        </div>
+
         <!-- Achievments -->
        <div class="achieve" id="myAchieve">
         <h1>Achievments</h1>
         <div class="achivement">
 
             <div class="appfest">
-                <img src="appFest.jpg" alt="">
+                <img src="appfest.jpeg" alt="">
                 <p>
                     Secured the first runner-up position in CODEBEES during APP FEST organized by FCIT, 
-                    demonstrating my competitive programming prowess.
-                    <!-- <iframe src="app fest.pdf" frameborder="0"></iframe> -->
+                     <!-- <iframe src="app fest.pdf" frameborder="0"></iframe> --> 
                 </p>
-                <a href="app fest.pdf">Certificate</a>   
             </div>
 
             <div class="pucon">
-                <img src="pucon.jpg" alt="">
+                <img src="pucon.jpeg" alt="">
                 <p>
-                    Recognized as part of the top female team at PUCON by FCIT, highlighting our collective excellence 
-                    and achievements in the field
+                    Recognized as part of the top female team at PUCON by FCIT.
                 </p>
-                <a href="app fest.pdf">Certificate</a>   
+            </div>
+
+            <div class="volunteer">
+                <img src="volunteer.jpeg" alt="">
+                <p>
+                    Aquired the leadership skills, volunteering at PUCON.
+                </p>
             </div>
            
 
         </div>
 
-       </div>
+       </div> 
 
         <!-- contact again -->
         <div class="footer">
             <h1>Reach Out to me!</h1>
-            <span class="material-symbols-outlined">
-                location_on <span>Lahore ,Pakistan</span>
+            <span class="material-symbols-outlined"><span>location_on</span>
+                
+                
+                <span>Lahore ,Pakistan</span>
             </span>
 
             <div id="mycontact">
@@ -204,12 +275,7 @@
 
         
     </div>
-
-    <script>
-        // JavaScript to dynamically set the copyright year
-        let year;
-        year = document.getElementById('year');
-        year.innerHTML = new Date().getFullYear();
+    <script src="script.js">
     </script>
 </body>
 
